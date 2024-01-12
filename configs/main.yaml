@@ -13,7 +13,7 @@ defaults:
 mode: test
 
 test:
-  ckpt_path: ./model/chexgpt.ckpt
+  ckpt_path: ./checkpoint/chexgpt.ckpt
   strict: True
 
   kwargs:
