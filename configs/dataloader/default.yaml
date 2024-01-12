@@ -1,0 +1,15 @@
+test:
+  pin_memory: True
+  shuffle: False
+  drop_last: False
+  batch_size: 32
+  num_workers: 8
+  prefetch_factor: 8
+
+predict:
+  pin_memory: True
+  shuffle: False
+  drop_last: False
+  batch_size: 128
+  num_workers: 8
+  prefetch_factor: 8

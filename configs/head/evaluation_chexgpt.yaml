@@ -1,0 +1,92 @@
+label_map:
+  atelectasis:
+    status:
+      default:
+        - not_exist
+      values:
+        - not_exist
+        - exist
+  consolidation:
+    status:
+      default:
+        - not_exist
+      values:
+        - not_exist
+        - exist
+  effusion:
+    status:
+      default:
+        - not_exist
+      values:
+        - not_exist
+        - exist
+  fracture:
+    status:
+      default:
+        - not_exist
+      values:
+        - not_exist
+        - exist
+  hyperinflation:
+    status:
+      default:
+        - not_exist
+      values:
+        - not_exist
+        - exist
+  lung opacity:
+    status:
+      default:
+        - not_exist
+      values:
+        - not_exist
+        - exist
+  nodule:
+    status:
+      default:
+        - not_exist
+      values:
+        - not_exist
+        - exist
+  pleural lesion:
+    status:
+      default:
+        - not_exist
+      values:
+        - not_exist
+        - exist
+  pneumothorax:
+    status:
+      default:
+        - not_exist
+      values:
+        - not_exist
+        - exist
+  pulmonary edema:
+    status:
+      default:
+        - not_exist
+      values:
+        - not_exist
+        - exist
+  subcutaneous emphysema:
+    status:
+      default:
+        - not_exist
+      values:
+        - not_exist
+        - exist
+  subdiaphragmatic gas:
+    status:
+      default:
+        - not_exist
+      values:
+        - not_exist
+        - exist
+  widened mediastinal silhouette:
+    status:
+      default:
+        - not_exist
+      values:
+        - not_exist
+        - exist

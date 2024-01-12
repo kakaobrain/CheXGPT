@@ -1,0 +1,61 @@
+defaults:
+  - _self_
+  - model: chexgpt_labeler
+  - dataloader: default
+  - head: evaluation_chexgpt
+  - data_test:
+    - mimic_500_findings
+    - mimic_500_impression
+  - data_predict:
+    - mimic_500_findings
+    - mimic_500_impression
+
+mode: test
+
+test:
+  ckpt_path: ./model/chexgpt.ckpt
+  strict: True
+
+  kwargs:
+    accelerator: gpu
+    strategy: ddp
+    num_nodes: ${test.distributed.NUM_NODES}
+    precision: 16-mixed
+    enable_progress_bar: False
+
+  distributed:
+    MASTER_ADDR: localhost
+    MASTER_PORT: 12345
+    NUM_GPUS_PER_NODE: 1
+    NUM_NODES: 1
+    NODE_RANK: 0
+
+predict:
+  ckpt_path: ./model/chexgpt.ckpt
+  strict: True
+  output_path: null
+
+  kwargs:
+    accelerator: gpu
+    strategy: ddp
+    num_nodes: ${predict.distributed.NUM_NODES}
+    precision: 16-mixed
+    enable_progress_bar: True
+
+  distributed:
+    MASTER_ADDR: localhost
+    MASTER_PORT: 12345
+    NUM_GPUS_PER_NODE: 1
+    NUM_NODES: 1
+    NODE_RANK: 0
+
+hydra:
+  output_subdir: hydra
+  run:
+    dir: ./outputs/${mode}/${now:%Y-%m-%d_%H-%M-%S}
+
+output:
+  checkpoint_path: ${hydra:run.dir}/checkpoints/
+  tensorboard_path: ${hydra:run.dir}/tensorboard/
+  config_path: ${hydra:run.dir}/config.yaml
+  save_interval_steps: 1000

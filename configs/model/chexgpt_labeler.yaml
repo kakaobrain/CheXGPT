@@ -1,0 +1,5 @@
+name: chexgpt_labeler
+label_map: ${head.label_map}
+loss_map: ${head.loss_map}
+kwargs:
+  p: 0.1

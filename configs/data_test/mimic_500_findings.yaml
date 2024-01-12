@@ -1,0 +1,6 @@
+mimic_500_findings:
+  data_format: jsonlines
+  data_path: data/mimic/test500_findings.jsonl
+  text_type: text
+  label_type: label
+  label_map: ${head.label_map}
