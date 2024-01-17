@@ -41,7 +41,10 @@ Download the model checkpoint from here [[link]](https://twg.kakaocdn.net/brainr
 TBU
 
 ## License
-TBU
+- The source code of CheX-GPT is licensed under [CC-BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/).
+- The CheX-GPT model initialization utilized the [ChexBert](https://github.com/stanfordmlgroup/CheXbert). For information regarding the licensing of ChexBert, please refer to the following links:
+  - [ChexBert License](https://github.com/stanfordmlgroup/CheXbert/blob/master/LICENSE.pdf)
+  - [Stanford Office of Technology Licensing](http://techfinder2.stanford.edu/technology_detail.php?ID=43869)
 
 ## Contact
 - Jawook Gu, [jawook.gu@kakaobrain.com](jawook.gu@kakaobrain.com)
