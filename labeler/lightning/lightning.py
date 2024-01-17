@@ -4,7 +4,7 @@ from importlib import import_module
 import pandas as pd
 from torch import distributed as dist
 from lightning.pytorch import LightningModule
-from labeler.evaluation.offline_gpt_metric import get_evaluator
+from labeler.evaluation.chexgpt_metric import get_evaluator
 
 
 class CxrLabelerLightningModule(LightningModule):

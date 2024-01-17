@@ -8,12 +8,11 @@ defaults:
     - mimic_500_impression
   - data_predict:
     - mimic_500_findings
-    - mimic_500_impression
 
 mode: test
 
 test:
-  ckpt_path: ./checkpoint/chexgpt.ckpt
+  ckpt_path: ./checkpoint/model_mixed.ckpt
   strict: True
 
   kwargs:
@@ -31,7 +30,7 @@ test:
     NODE_RANK: 0
 
 predict:
-  ckpt_path: ./model/chexgpt.ckpt
+  ckpt_path: ./checkpoint/model_mixed.ckpt
   strict: True
   output_path: null
 

@@ -11,7 +11,7 @@ def get_evaluator(cfg):
     else:
         datasets = []
 
-    return OfflineGptMetric(cfg.head, len(datasets))
+    return ChexGptMetric(cfg.head, len(datasets))
 
 
 def safe_division(x, y):
@@ -21,7 +21,7 @@ def safe_division(x, y):
         return 0.0
 
 
-class OfflineGptMetric(nn.Module):
+class ChexGptMetric(nn.Module):
     def __init__(self, head_cfg, num_datasets):
         super().__init__()
 
