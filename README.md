@@ -38,7 +38,14 @@ Download the model checkpoint from here [[link]](https://twg.kakaocdn.net/brainr
     ```
   
 ## Citation
-TBU
+```
+@article{gu2024chex,
+  title={CheX-GPT: Harnessing Large Language Models for Enhanced Chest X-ray Report Labeling},
+  author={Gu, Jawook and Cho, Han-Cheol and Kim, Jiho and You, Kihyun and Hong, Eun Kyoung and Roh, Byungseok},
+  journal={arXiv preprint arXiv:2401.11505},
+  year={2024}
+}
+```
 
 ## License
 - The source code of CheX-GPT is licensed under [CC-BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/).
